@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noor-E Rahman IT Solutions</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+        * {
+            text-align: center;
+        }
+        /* ==========================================================================
+            Mixins	 
+            ========================================================================== */
+        body {
+        background: #000000;
+        background-size: cover;
+        font-family: 'Oswald', sans-serif;
+        }
+
+        .text-anim {
+        color: #ffffff;
+        font-size: 32px;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
+        }
+
+        /* ==========================================================================
+            Main Animation	 
+            ========================================================================== */
+        .text-anim span {
+        opacity: 0;
+        -webkit-transition: all, 550ms;
+        transition: all, 550ms;
+        -webkit-filter: blur(25px);
+        -moz-filter: blur(25px);
+        -ms-filter: blur(25px);
+        filter: blur(25px);
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        }
+        .text-anim span:nth-child(22) {
+        -webkit-transition-delay: 770ms;
+        transition-delay: 770ms;
+        }
+        .text-anim span:nth-child(21) {
+        -webkit-transition-delay: 735ms;
+        transition-delay: 735ms;
+        }
+        .text-anim span:nth-child(20) {
+        -webkit-transition-delay: 700ms;
+        transition-delay: 700ms;
+        }
+        .text-anim span:nth-child(19) {
+        -webkit-transition-delay: 665ms;
+        transition-delay: 665ms;
+        }
+        .text-anim span:nth-child(18) {
+        -webkit-transition-delay: 630ms;
+        transition-delay: 630ms;
+        }
+        .text-anim span:nth-child(17) {
+        -webkit-transition-delay: 595ms;
+        transition-delay: 595ms;
+        }
+        .text-anim span:nth-child(16) {
+        -webkit-transition-delay: 560ms;
+        transition-delay: 560ms;
+        }
+        .text-anim span:nth-child(15) {
+        -webkit-transition-delay: 525ms;
+        transition-delay: 525ms;
+        }
+        .text-anim span:nth-child(14) {
+        -webkit-transition-delay: 490ms;
+        transition-delay: 490ms;
+        }
+        .text-anim span:nth-child(13) {
+        -webkit-transition-delay: 455ms;
+        transition-delay: 455ms;
+        }
+        .text-anim span:nth-child(12) {
+        -webkit-transition-delay: 420ms;
+        transition-delay: 420ms;
+        }
+        .text-anim span:nth-child(11) {
+        -webkit-transition-delay: 385ms;
+        transition-delay: 385ms;
+        }
+        .text-anim span:nth-child(10) {
+        -webkit-transition-delay: 350ms;
+        transition-delay: 350ms;
+        }
+        .text-anim span:nth-child(9) {
+        -webkit-transition-delay: 315ms;
+        transition-delay: 315ms;
+        }
+        .text-anim span:nth-child(8) {
+        -webkit-transition-delay: 280ms;
+        transition-delay: 280ms;
+        }
+        .text-anim span:nth-child(7) {
+        -webkit-transition-delay: 245ms;
+        transition-delay: 245ms;
+        }
+        .text-anim span:nth-child(6) {
+        -webkit-transition-delay: 210ms;
+        transition-delay: 210ms;
+        }
+        .text-anim span:nth-child(5) {
+        -webkit-transition-delay: 175ms;
+        transition-delay: 175ms;
+        }
+        .text-anim span:nth-child(4) {
+        -webkit-transition-delay: 140ms;
+        transition-delay: 140ms;
+        }
+        .text-anim span:nth-child(3) {
+        -webkit-transition-delay: 105ms;
+        transition-delay: 105ms;
+        }
+        .text-anim span:nth-child(2) {
+        -webkit-transition-delay: 70ms;
+        transition-delay: 70ms;
+        }
+        .text-anim span:nth-child(1) {
+        -webkit-transition-delay: 35ms;
+        transition-delay: 35ms;
+        }
+
+        .text-anim.animate span {
+        opacity: 1;
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+        }
+
+    </style>
+	<link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <img src="images/logo-black.jpg" style="width:80%;max-width: 500px;height: auto;margin-top:100px;" />
+
+    <div class="text-anim">
+        <span>C</span>
+        <span>O</span>
+        <span>M</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+        <span> </span>
+        <span>&nbsp;</span>
+        <span>S</span>
+        <span>O</span>
+        <span>O</span>
+        <span>N</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+    </div>
+
+    <script>
+
+        /*Sample code to run animation continuously every 2 seconds*/
+        setInterval(function(){ 
+        $('.text-anim').toggleClass('animate');
+        },2000);
+
+    </script>
+</body>
+</html>
